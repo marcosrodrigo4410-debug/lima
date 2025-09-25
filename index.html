@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LIMA- Teste Grátis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="subcontainer">
+        <div class="limatv">
+          <img
+            src="limatv-Photoroom.png"
+            alt="IPTV Apresentação"
+            class="logo"
+          />
+        </div>
+        <h1>
+          Quer assistir todos os jogos <br />
+          do seu time?
+        </h1>
+
+        <a href="https://wa.me/SEUNUMERO" class="btn" target="_blank"
+          >Teste Grátis <br />
+          Agora mesmo!</a
+        >
+      </div>
+
+      <h3>Confira os jogos destaque do dia ⬇</h3>
+      <div class="carousel">
+        <div class="carousel-images" id="carouselImages">
+          <img src="banner_7.png" alt="Jogo destaque do dia" />
+          <img src="banner_6.png" alt="Jogo destaque do dia" />
+          <img src="banner_3.png" alt="Jogo destaque do dia" />
+        </div>
+        <div class="carousel-buttons">
+          <button onclick="prevSlide()">❮</button>
+          <button onclick="nextSlide()">❯</button>
+        </div>
+      </div>
+
+      <script>
+        let currentIndex = 0;
+        const images = document.getElementById("carouselImages");
+        const totalSlides = images.children.length;
+
+        function updateCarousel() {
+          images.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % totalSlides;
+          updateCarousel();
+        }
+
+        function prevSlide() {
+          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+          updateCarousel();
+        }
+
+        // Auto-slide a cada 5 segundos
+        setInterval(nextSlide, 5000);
+      </script>
+
+      <a href="https://wa.me/SEUNUMERO" class="btn" target="_blank"
+        >Teste Grátis <br />
+        Agora mesmo!</a
+      >
+    </div>
+  </body>
+</html>

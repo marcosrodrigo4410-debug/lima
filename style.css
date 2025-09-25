@@ -1,0 +1,98 @@
+body {
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.container {
+  padding: 40px 20px;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.subcontainer {
+  background-image: url(https://s.zst.com.br/cms-assets/2021/02/futebol-na-tv-1.jpg);
+  background-position: 50%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1px;
+}
+
+.limatv {
+  position: relative;
+  margin-top: 300px;
+}
+
+.logo {
+  max-width: 100%;
+  height: 20rem;
+  border-radius: 10px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  height: max-content;
+}
+.btn:hover {
+  background-color: #b00610;
+}
+
+a {
+  font-weight: 900;
+}
+
+h1,
+h2,
+h3 {
+  text-shadow: #000 2px 2px;
+  font-size: 50px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.carousel-buttons button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+}
